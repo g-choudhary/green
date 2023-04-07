@@ -19,7 +19,7 @@ const header = () => {
                 <img src={Profile} alt="user" />
               </button>
               <a href="index.html">
-                <img src="images/logo.png" alt="logo" />
+                <img src={Logo} alt="logo" />
               </a>
               <button className="header-src">
                 <i className="fas fa-search"></i>

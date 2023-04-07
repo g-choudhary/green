@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="container-fluid p-0">
       <Router>
-        <div className="row m-0 page_main_row">
-          <Header />
+        <Header />
+        <div className="row">
           <div className="col-lg-3">
             <Sidebar />
           </div>
