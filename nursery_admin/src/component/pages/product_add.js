@@ -4,7 +4,7 @@ const product_add = () => {
   return (
     <div>
       <div className="main_page pt-4">
-        <h4>Product Add</h4>
+        <h4>Product Add new pages</h4>
       </div>
     </div>
   );
