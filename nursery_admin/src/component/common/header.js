@@ -1,10 +1,5 @@
 import React, { Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css-js/css/main.css";
-import "../css-js/css/home-standard.css";
-import "../css-js/css/home-standard.css";
-import "../css-js/fonts/flaticon/flaticon.css";
-import "../css-js/fonts/fontawesome/fontawesome.min.css";
 import Logo from "../css-js/images/logo.png";
 import Profile from "../css-js/images/user.png";
 
@@ -66,6 +61,31 @@ const header = () => {
           </div>
         </div>
       </header>
+      <div className="mobile-menu">
+        <a href="index.html" title="Home Page">
+          <i className="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <button className="cate-btn" title="Category List">
+          <i className="fas fa-list"></i>
+          <span>category</span>
+        </button>
+        <button className="cart-btn" title="Cartlist">
+          <i className="fas fa-shopping-basket"></i>
+          <span>cartlist</span>
+          <sup>9+</sup>
+        </button>
+        <a href="wishlist.html" title="Wishlist">
+          <i className="fas fa-heart"></i>
+          <span>wishlist</span>
+          <sup>0</sup>
+        </a>
+        <a href="compare.html" title="Compare List">
+          <i className="fas fa-random"></i>
+          <span>compare</span>
+          <sup>0</sup>
+        </a>
+      </div>
     </Fragment>
   );
 };
