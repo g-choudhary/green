@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const wallet = () => {
   return (
@@ -11,7 +12,7 @@ const wallet = () => {
           <h2>my wallet</h2>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="" >Home</Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               wallet
@@ -50,28 +51,28 @@ const wallet = () => {
                     <h6>suggested:</h6>
                     <ul>
                       <li>
-                        <a href="#">$50</a>
+                        <Link to="" >$50</Link>
                       </li>
                       <li>
-                        <a href="#">$100</a>
+                        <Link to="" >$100</Link>
                       </li>
                       <li>
-                        <a href="#">$300</a>
+                        <Link to="" >$300</Link>
                       </li>
                       <li>
-                        <a href="#">$500</a>
+                        <Link to="" >$500</Link>
                       </li>
                       <li>
-                        <a href="#">$800</a>
+                        <Link to="" >$800</Link>
                       </li>
                       <li>
-                        <a href="#">$1000</a>
+                        <Link to="" >$1000</Link>
                       </li>
                       <li>
-                        <a href="#">$3000</a>
+                        <Link to="" >$3000</Link>
                       </li>
                       <li>
-                        <a href="#">$5000</a>
+                        <Link to="" >$5000</Link>
                       </li>
                     </ul>
                   </div>
@@ -123,7 +124,7 @@ const wallet = () => {
                         <td>02 February 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -134,7 +135,7 @@ const wallet = () => {
                         <td>02 march 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -145,7 +146,7 @@ const wallet = () => {
                         <td>02 april 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -156,7 +157,7 @@ const wallet = () => {
                         <td>02 may 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -167,7 +168,7 @@ const wallet = () => {
                         <td>02 june 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -178,7 +179,7 @@ const wallet = () => {
                         <td>02 February 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -189,7 +190,7 @@ const wallet = () => {
                         <td>02 march 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -200,7 +201,7 @@ const wallet = () => {
                         <td>02 april 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -211,7 +212,7 @@ const wallet = () => {
                         <td>02 may 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -222,7 +223,7 @@ const wallet = () => {
                         <td>02 june 2021</td>
                         <td>Order Altered</td>
                         <td>
-                          Order <a href="#">(26881)</a>
+                          Order <Link to="" >(26881)</Link>
                         </td>
                         <td>$345.89</td>
                         <td>$345.89</td>
@@ -235,35 +236,35 @@ const wallet = () => {
                   <p className="page-info">Showing 12 of 60 Results</p>
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <Link className="page-link" to="" >
                         <i className="fas fa-long-arrow-alt-left"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li className="page-item">
-                      <a className="page-link active" href="#">
+                      <Link className="page-link active" to="" >
                         1
-                      </a>
+                      </Link>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <Link className="page-link" to="" >
                         2
-                      </a>
+                      </Link>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <Link className="page-link" to="" >
                         3
-                      </a>
+                      </Link>
                     </li>
                     <li className="page-item">...</li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <Link className="page-link" to="" >
                         60
-                      </a>
+                      </Link>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <Link className="page-link" to="" >
                         <i className="fas fa-long-arrow-alt-right"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

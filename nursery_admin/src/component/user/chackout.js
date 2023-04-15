@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const chackout = () => {
   return (
@@ -11,10 +12,10 @@ const chackout = () => {
           <h2>checkout</h2>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="" >Home</Link>
             </li>
             <li class="breadcrumb-item">
-              <a href="shop-4column.html">shop grid</a>
+              <Link to="" >shop grid</Link>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
               checkout
@@ -29,7 +30,7 @@ const chackout = () => {
               <div class="alert-info">
                 <p>
                   Returning customer?{" "}
-                  <a href="login.html">Click here to login</a>
+                  <Link to="" >Click here to login</Link>
                 </p>
               </div>
             </div>
@@ -75,18 +76,18 @@ const chackout = () => {
                             <h6>3</h6>
                           </td>
                           <td class="table-action">
-                            <a
+                            <Link 
                               class="view"
-                              href="#"
+                              to="" 
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="#product-view"
                             >
                               <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="trash" href="#" title="Remove Wishlist">
+                            </Link>
+                            <Link class="trash" to="" >
                               <i class="icofont-trash"></i>
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                         <tr>
@@ -111,18 +112,18 @@ const chackout = () => {
                             <h6>5</h6>
                           </td>
                           <td class="table-action">
-                            <a
+                            <Link 
                               class="view"
-                              href="#"
+                              to="" 
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="#product-view"
                             >
                               <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="trash" href="#" title="Remove Wishlist">
+                            </Link>
+                            <Link class="trash" to="" >
                               <i class="icofont-trash"></i>
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                         <tr>
@@ -147,18 +148,18 @@ const chackout = () => {
                             <h6>2</h6>
                           </td>
                           <td class="table-action">
-                            <a
+                            <Link 
                               class="view"
-                              href="#"
+                              to="" 
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="#product-view"
                             >
                               <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="trash" href="#" title="Remove Wishlist">
+                            </Link>
+                            <Link class="trash" to="" >
                               <i class="icofont-trash"></i>
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                         <tr>
@@ -183,18 +184,18 @@ const chackout = () => {
                             <h6>3</h6>
                           </td>
                           <td class="table-action">
-                            <a
+                            <Link 
                               class="view"
-                              href="#"
+                              to="" 
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="#product-view"
                             >
                               <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="trash" href="#" title="Remove Wishlist">
+                            </Link>
+                            <Link class="trash" to="" >
                               <i class="icofont-trash"></i>
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                         <tr>
@@ -219,18 +220,18 @@ const chackout = () => {
                             <h6>7</h6>
                           </td>
                           <td class="table-action">
-                            <a
+                            <Link 
                               class="view"
-                              href="#"
+                              to="" 
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="#product-view"
                             >
                               <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="trash" href="#" title="Remove Wishlist">
+                            </Link>
+                            <Link class="trash" to="" >
                               <i class="icofont-trash"></i>
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                       </tbody>
@@ -546,13 +547,13 @@ const chackout = () => {
                   <input type="checkbox" id="checkout-check" />
                   <label for="checkout-check">
                     By making this purchase you agree to our
-                    <a href="#">Terms and Conditions</a>.
+                    <Link to="" >Terms and Conditions</Link>.
                   </label>
                 </div>
                 <div class="checkout-proced">
-                  <a href="invoice.html" class="btn btn-inline">
+                  <Link to="" >
                     proced to checkout
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

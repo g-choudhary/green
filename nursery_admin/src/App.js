@@ -1,4 +1,6 @@
 import "./App.css";
+import React from "react";
+import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { Router } from "react-router-dom";
 import Product_list from "./component/admin/product_list";
@@ -9,7 +11,7 @@ import Index from "./component/user";
 import Checkout from "./component/user/chackout";
 import Nav from "./component/common/nav";
 import Product_detail from "./component/user/product_detail";
-import Profile from "./component/admin/profile";
+import Profile from "./component/user/profile";
 import Wishlist from "./component/user/wishlist";
 import Shop from "./component/user/shop";
 import Footer from "./component/common/footer";
@@ -27,10 +29,10 @@ function App() {
     <div className="container-fluid p-0">
       <Router>
         <Routes>
-          <Route path="/user/login" element={<Login />} />
-          <Route path="/user/register" element={<Register />} />
-          <Route path="/user/reset_password" element={<Reset_password />} />
-          <Route path="/user/change_password" element={<Change_password />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/reset_password" element={<Reset_password />} />
+          <Route path="/change_password" element={<Change_password />} />
         </Routes>
 
         <Header />
@@ -54,15 +56,15 @@ function App() {
             <div className="col-lg-12">
               <div className="main_content_div">
                 <Routes>
-                  <Route path="/user/index" element={<Index />} />
-                  <Route path="/user/checkout" element={<Checkout />} />
-                  <Route path="/user/profile" element={<Profile />} />
-                  <Route path="/user/wishlist" element={<Wishlist />} />
-                  <Route path="/user/shop" element={<Shop />} />
-                  <Route path="/user/order_list" element={<Order_list />} />
-                  <Route path="/user/wallet" element={<Wallet />} />
+                  <Route path="/" element={<Index />} />
+                  <Route path="/checkout" element={<Checkout />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/wishlist" element={<Wishlist />} />
+                  <Route path="/shop" element={<Shop />} />
+                  <Route path="/order_list" element={<Order_list />} />
+                  <Route path="/wallet" element={<Wallet />} />
                   <Route
-                    path="/user/product_detail"
+                    path="/product_detail"
                     element={<Product_detail />}
                   />
                 </Routes>

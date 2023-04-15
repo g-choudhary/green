@@ -1,9 +1,101 @@
-import React from "react";
-
-const profile = () => {
+import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
+import useValidation from "../common/useValidation";
+import { userdetails } from "../api/api";
+/* eslint-disable no-unused-vars */
+const Profile = () => {
+  const initialFormState = {
+    first_name: "",
+    last_name: "",
+    email: "",
+    password: "",
+    phone_no: "",
+    pincode: "",
+    city: "",
+    address: "",
+    alternate_address: "",
+    created_on: "",
+    updated_on: "",
+    is_deleted: ""
+  };
+  const validators = {
+    first_name: [
+      (value) =>
+        value === "" || value.trim() === ""
+          ? "Name is required"
+          : /[^A-Za-z 0-9]/g.test(value)
+          ? "Cannot use special character "
+          : null,
+    ],
+    last_name: [
+      (value) =>
+        value === "" || value.trim() === ""
+          ? "Last name is required"
+          : /[^A-Za-z 0-9]/g.test(value)
+          ? "Cannot use special character "
+          : null,
+    ],
+    pincode: [
+      (value) =>
+        value === "" || value.trim() === ""
+          ? "Designation is required"
+          : /[^A-Za-z 0-9]/g.test(value)
+          ? "Cannot use special character "
+          : null,
+    ],
+    email: [
+      (value) =>
+        value === "" || value.trim() === ""
+          ? "Email address is required"
+          : !/^\S+@\S+\.\S+$/.test(value)
+          ? "Invalid email address"
+          : null,
+    ],
+    password: [
+      (value) =>
+        value === "" || value.trim() === ""
+          ? "Designation is required"
+          : /[^A-Za-z 0-9]/g.test(value)
+          ? "Cannot use special character "
+          : null,
+    ],
+    phone_no: [
+      (value) =>
+        value === ""||value==="null" || value.trim() === ""
+          ? "Mobile number is required"
+          : /^(\+\d{1,3}[- ]?)?\d{10}$/g.test(value)
+          ? "Invalid Mobile number "
+          : null,
+    ],
+    
+  };
+  // CUSTOM VALIDATIONS IMPORT
+  const { state, setState, onInputChange, setErrors, errors, validate } = useValidation(
+    initialFormState,
+    validators
+  );
+  // USER CARRER PROFILE SUBMIT BUTTON
+  const onCarrerProfileClick = (event) => {
+    event.preventDefault();
+    if (validate()) {
+      console.log("API CALL");
+    }
+  };
+  const UserData = async () => {
+    const userData = await userdetails();
+    setState(userData[0]);
+  };
+  useEffect(() => {
+    if (localStorage.getItem("user_token") === "" || localStorage.getItem("user_token") === undefined || localStorage.getItem("user_token")===null) {
+      setState(initialFormState);
+    } else {
+      UserData();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [localStorage.getItem("user_token")]);
+  console.log(JSON.stringify(state.phone_no));
   return (
     <div>
-      {" "}
       <section
         class="inner-section single-banner"
         //   style="background: url(images/single-banner.jpg) no-repeat center"
@@ -12,7 +104,7 @@ const profile = () => {
           <h2>my profile</h2>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="" >Home</Link>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
               profile
@@ -33,36 +125,66 @@ const profile = () => {
                 </div>
                 <div class="account-content">
                   <div class="row">
-                    <div class="col-lg-2">
-                      <div class="profile-image">
-                        <a href="#">
-                          <img src="images/user.png" alt="user" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
+                    
+                    <div class="col-md-6 col-lg-6">
                       <div class="form-group">
-                        <label class="form-label">name</label>
+                        <label class="form-label">Fisrt Name</label>
                         <input
-                          class="form-control"
+                          class={errors.first_name?"form-control border border-danger":"form-control"}
                           type="text"
-                          value="Miron Mahmud"
+                          value={state.first_name}
+                          name="first_name"
+                          onChange={onInputChange}
+                          id="first_name"
                         />
+                      {errors.first_name?(errors.first_name||[]).map((error)=>{return(<small className="text-danger">{error}</small>)}
+                   ):null}
+                   </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                        <input
+                          class={errors.last_name?"form-control border border-danger":"form-control"}
+                          type="text"
+                          value={state.last_name}
+                          name="last_name"
+                          onChange={onInputChange}
+                        />
+                          {errors.last_name?(errors.last_name||[]).map((error)=>{return(<small className="text-danger">{error}</small>)}
+                   ):null}
                       </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                       <div class="form-group">
                         <label class="form-label">Email</label>
                         <input
-                          class="form-control"
+                          class={errors.email?"form-control border border-danger":"form-control"}
                           type="email"
-                          value="mironcoder@gmail.com"
+                          value={state.email}
+                          name="email"
+                          onChange={onInputChange}
                         />
+                         {errors.email?(errors.email||[]).map((error)=>{return(<small className="text-danger">{error}</small>)}
+                   ):null}
                       </div>
                     </div>
-                    <div class="col-lg-2">
-                      <div class="profile-btn">
-                        <a href="change-password.html">change pass.</a>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label class="form-label">Mobile no.</label>
+                        <input
+                          class={errors.phone_no?"form-control border border-danger":"form-control"}
+                          type="number"
+                          value={state.phone_no}
+                          name="phone_no"
+                          onChange={onInputChange}
+                        />  {errors.phone_no?(errors.phone_no||[]).map((error)=>{return(<small className="text-danger">{error}</small>)}
+                        ):null}
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="profile-btn form-button">
+                        <button className="" onClick={onCarrerProfileClick}>Save</button>
                       </div>
                     </div>
                   </div>
@@ -515,4 +637,4 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;

@@ -17,7 +17,7 @@ import "../src/component/css-js/vendor/venobox/venobox.min.css";
 import "../src/component/css-js/css/user-auth.css";
 import "../src/component/css-js/css/orderlist.css";
 import "../src/component/css-js/css/wallet.css";
-// <link rel="stylesheet" href="css/user-auth.css" />
+// <link rel="stylesheet" to=""  />
 
 //  js
 // import "../src/component/css-js/vendor/bootstrap/jquery-1.12.4.min.js";

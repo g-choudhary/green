@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Logo from "../css-js/images/logo.png";
 
 const login = () => {
@@ -10,9 +11,9 @@ const login = () => {
           <div className="row justify-content-center">
             <div className="col-12 col-sm-10 col-md-12 col-lg-12 col-xl-10">
               <div className="user-form-logo">
-                <a href="index.html">
+                <Link to="" >
                   <img src={Logo} alt="logo" />
-                </a>
+                </Link>
               </div>
               <div className="user-form-card">
                 <div className="user-form-title">
@@ -22,24 +23,24 @@ const login = () => {
                 <div className="user-form-group">
                   <ul className="user-form-social">
                     <li>
-                      <a href="#" className="facebook">
+                      <Link to="" >
                         <i className="fab fa-facebook-f"></i>login with facebook
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="twitter">
+                      <Link to="" >
                         <i className="fab fa-twitter"></i>login with twitter
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="google">
+                      <Link to="" >
                         <i className="fab fa-google"></i>login with google
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="instagram">
+                      <Link to="" >
                         <i className="fab fa-instagram"></i>login with instagram
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <div className="user-form-divider">
@@ -75,7 +76,7 @@ const login = () => {
                       <button type="submit">login</button>
                       <p>
                         Forgot your password?
-                        <a href="reset-password.html">reset here</a>
+                        <Link to="" >reset here</Link>
                       </p>
                     </div>
                   </form>
@@ -84,12 +85,12 @@ const login = () => {
               <div className="user-form-remind">
                 <p>
                   Don't have any account?
-                  <a href="register.html">register here</a>
+                  <Link to="" >register here</Link>
                 </p>
               </div>
               <div className="user-form-footer">
                 <p>
-                  Greeny | &COPY; Copyright by <a href="#">Mironcoder</a>
+                  Greeny | &COPY; Copyright by <Link to="" >Mironcoder</Link>
                 </p>
               </div>
             </div>

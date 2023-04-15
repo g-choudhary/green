@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import product from "../css-js/images/product/01.jpg";
 const product_detail = () => {
   return (
@@ -9,10 +10,10 @@ const product_detail = () => {
           <h2>product video</h2>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="" >Home</Link>
             </li>
             <li className="breadcrumb-item">
-              <a href="shop-4column.html">shop-4column</a>
+              <Link to="" >shop-4column</Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               product-video
@@ -68,34 +69,34 @@ const product_detail = () => {
             <div className="col-lg-6">
               <ul className="product-navigation">
                 <li className="product-nav-prev">
-                  <a href="#">
+                  <Link to="" >
                     <i className="icofont-arrow-left"></i>prev product
                     <span className="product-nav-popup">
                       <img src={product} alt="product" />
                       <small>green chilis</small>
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="product-nav-next">
-                  <a href="#">
+                  <Link to="" >
                     next product <i className="icofont-arrow-right"></i>
                     <span className="product-nav-popup">
                       <img src={product} alt="product" />
                       <small>green chilis</small>
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="details-content">
                 <h3 className="details-name">
-                  <a href="#">existing product name</a>
+                  <Link to="" >existing product name</Link>
                 </h3>
                 <div className="details-meta">
                   <p>
                     SKU:<span>1234567</span>
                   </p>
                   <p>
-                    BRAND:<a href="#">radhuni</a>
+                    BRAND:<Link to="" >radhuni</Link>
                   </p>
                 </div>
                 <div className="details-rating">
@@ -104,7 +105,7 @@ const product_detail = () => {
                   <i className="active icofont-star"></i>
                   <i className="active icofont-star"></i>
                   <i className="icofont-star"></i>
-                  <a href="#">(3 reviews)</a>
+                  <Link to="" >(3 reviews)</Link>
                 </div>
                 <h3 className="details-price">
                   <del>$38.00</del>
@@ -121,13 +122,13 @@ const product_detail = () => {
                   <label className="details-list-title">tags:</label>
                   <ul className="details-tag-list">
                     <li>
-                      <a href="#">organic</a>
+                      <Link to="" >organic</Link>
                     </li>
                     <li>
-                      <a href="#">fruits</a>
+                      <Link to="" >fruits</Link>
                     </li>
                     <li>
-                      <a href="#">chilis</a>
+                      <Link to="" >chilis</Link>
                     </li>
                   </ul>
                 </div>
@@ -135,32 +136,32 @@ const product_detail = () => {
                   <label className="details-list-title">Share:</label>
                   <ul className="details-share-list">
                     <li>
-                      <a
-                        href="#"
+                      <Link 
+                        to="" 
                         className="icofont-facebook"
                         title="Facebook"
-                      ></a>
+                      ></Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link 
+                        to="" 
                         className="icofont-twitter"
                         title="Twitter"
-                      ></a>
+                      ></Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link 
+                        to="" 
                         className="icofont-linkedin"
                         title="Linkedin"
-                      ></a>
+                      ></Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link 
+                        to="" 
                         className="icofont-instagram"
                         title="Instagram"
-                      ></a>
+                      ></Link>
                     </li>
                   </ul>
                 </div>
@@ -186,22 +187,22 @@ const product_detail = () => {
                   </div>
                 </div>
                 <div className="details-action-group">
-                  <a
+                  <Link 
                     className="details-wish wish"
-                    href="#"
+                    to="" 
                     title="Add Your Wishlist"
                   >
                     <i className="icofont-heart"></i>
                     <span>add to wish</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link 
                     className="details-compare"
-                    href="compare.html"
+                    to="" 
                     title="Compare This Item"
                   >
                     <i className="fas fa-random"></i>
                     <span>Compare This</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -214,23 +215,23 @@ const product_detail = () => {
             <div className="col-lg-12">
               <ul className="nav nav-tabs">
                 <li>
-                  <a
-                    href="#tab-desc"
+                  <Link 
+                    to="" 
                     className="tab-link active"
                     data-bs-toggle="tab"
                   >
                     descriptions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#tab-spec" className="tab-link" data-bs-toggle="tab">
+                  <Link to="" >
                     Specifications
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#tab-reve" className="tab-link" data-bs-toggle="tab">
+                  <Link to="" >
                     reviews (2)
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -270,13 +271,13 @@ const product_detail = () => {
                 <div className="product-details-frame">
                   <div className="tab-descrip">
                     <img src="images/video.jpg" alt="video" />
-                    <a
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
               </div>
@@ -317,11 +318,11 @@ const product_detail = () => {
                   <ul className="review-list">
                     <li className="review-item">
                       <div className="review-media">
-                        <a className="review-avatar" href="#">
+                        <Link className="review-avatar" to="" >
                           <img src="images/avatar/01.jpg" alt="review" />
-                        </a>
+                        </Link>
                         <h5 className="review-meta">
-                          <a href="#">miron mahmud</a>
+                          <Link to="" >miron mahmud</Link>
                           <span>June 02, 2020</span>
                         </h5>
                       </div>
@@ -347,11 +348,11 @@ const product_detail = () => {
                       <ul className="review-reply-list">
                         <li className="review-reply-item">
                           <div className="review-media">
-                            <a className="review-avatar" href="#">
+                            <Link className="review-avatar" to="" >
                               <img src="images/avatar/02.jpg" alt="review" />
-                            </a>
+                            </Link>
                             <h5 className="review-meta">
-                              <a href="#">labonno khan</a>
+                              <Link to="" >labonno khan</Link>
                               <span>
                                 <b>author -</b>June 02, 2020
                               </span>
@@ -375,11 +376,11 @@ const product_detail = () => {
                         </li>
                         <li className="review-reply-item">
                           <div className="review-media">
-                            <a className="review-avatar" href="#">
+                            <Link className="review-avatar" to="" >
                               <img src="images/avatar/03.jpg" alt="review" />
-                            </a>
+                            </Link>
                             <h5 className="review-meta">
-                              <a href="#">tahmina bonny</a>
+                              <Link to="" >tahmina bonny</Link>
                               <span>June 02, 2020</span>
                             </h5>
                           </div>
@@ -403,11 +404,11 @@ const product_detail = () => {
                     </li>
                     <li className="review-item">
                       <div className="review-media">
-                        <a className="review-avatar" href="#">
+                        <Link className="review-avatar" to="" >
                           <img src="images/avatar/04.jpg" alt="review" />
-                        </a>
+                        </Link>
                         <h5 className="review-meta">
-                          <a href="#">shipu shikdar</a>
+                          <Link to="" >shipu shikdar</Link>
                           <span>June 02, 2020</span>
                         </h5>
                       </div>
@@ -510,29 +511,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -542,10 +543,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -585,29 +586,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -617,10 +618,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -659,29 +660,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -691,10 +692,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -733,29 +734,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -765,10 +766,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -807,29 +808,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -839,10 +840,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -881,29 +882,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -913,10 +914,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -955,29 +956,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -987,10 +988,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -1030,29 +1031,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -1062,10 +1063,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -1104,29 +1105,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -1136,10 +1137,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -1178,29 +1179,29 @@ const product_detail = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -1210,10 +1211,10 @@ const product_detail = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -1247,10 +1248,10 @@ const product_detail = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-25">
-                <a href="shop-4column.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>view all related</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Logo from "../css-js/images/logo.png";
 import Payment1 from "../css-js/images/payment/jpg/01.jpg";
 import Payment2 from "../css-js/images/payment/jpg/02.jpg";
@@ -89,9 +90,9 @@ const footer = () => {
           <div className="row">
             <div className="col-sm-6 col-xl-3">
               <div className="footer-widget">
-                <a className="footer-logo" href="#">
+                <Link className="footer-logo" to="" >
                   <img src={Logo} alt="logo" />
-                </a>
+                </Link>
                 <p className="footer-desc">
                   Adipisci asperiores ipsum ipsa repellat consequatur
                   repudiandae quisquam assumenda dolor perspiciatis sit ipsum
@@ -99,19 +100,19 @@ const footer = () => {
                 </p>
                 <ul className="footer-social">
                   <li>
-                    <a className="icofont-facebook" href="#"></a>
+                    <Link className="icofont-facebook" to="" ></Link>
                   </li>
                   <li>
-                    <a className="icofont-twitter" href="#"></a>
+                    <Link className="icofont-twitter" to="" ></Link>
                   </li>
                   <li>
-                    <a className="icofont-linkedin" href="#"></a>
+                    <Link className="icofont-linkedin" to="" ></Link>
                   </li>
                   <li>
-                    <a className="icofont-instagram" href="#"></a>
+                    <Link className="icofont-instagram" to="" ></Link>
                   </li>
                   <li>
-                    <a className="icofont-pinterest" href="#"></a>
+                    <Link className="icofont-pinterest" to="" ></Link>
                   </li>
                 </ul>
               </div>
@@ -147,36 +148,36 @@ const footer = () => {
                 <div className="footer-links">
                   <ul>
                     <li>
-                      <a href="#">My Account</a>
+                      <Link to="" >My Account</Link>
                     </li>
                     <li>
-                      <a href="#">Order History</a>
+                      <Link to="" >Order History</Link>
                     </li>
                     <li>
-                      <a href="#">Order Tracking</a>
+                      <Link to="" >Order Tracking</Link>
                     </li>
                     <li>
-                      <a href="#">Best Seller</a>
+                      <Link to="" >Best Seller</Link>
                     </li>
                     <li>
-                      <a href="#">New Arrivals</a>
+                      <Link to="" >New Arrivals</Link>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="#">Location</a>
+                      <Link to="" >Location</Link>
                     </li>
                     <li>
-                      <a href="#">Affiliates</a>
+                      <Link to="" >Affiliates</Link>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <Link to="" >Contact</Link>
                     </li>
                     <li>
-                      <a href="#">Carrer</a>
+                      <Link to="" >Carrer</Link>
                     </li>
                     <li>
-                      <a href="#">Faq</a>
+                      <Link to="" >Faq</Link>
                     </li>
                   </ul>
                 </div>
@@ -191,12 +192,12 @@ const footer = () => {
                   exercitationem!
                 </p>
                 <div className="footer-app">
-                  <a href="#">
+                  <Link to="" >
                     <img src={Google} alt="google" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="" >
                     <img src={Apple} alt="app" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -205,21 +206,21 @@ const footer = () => {
             <div className="col-12">
               <div className="footer-bottom">
                 <p className="footer-copytext">
-                  &copy; All Copyrights Reserved by <a href="#">Mironcoder</a>
+                  &copy; All Copyrights Reserved by <Link to="" >Mironcoder</Link>
                 </p>
                 <div className="footer-card">
-                  <a href="#">
+                  <Link to="" >
                     <img src={Payment1} alt="payment" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="" >
                     <img src={Payment2} alt="payment" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="" >
                     <img src={Payment3} alt="payment" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="" >
                     <img src={Payment4} alt="payment" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

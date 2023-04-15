@@ -1,4 +1,5 @@
 import React from "react";
+import {Link}  from 'react-router-dom';
 
 const nav = () => {
   return (
@@ -9,31 +10,40 @@ const nav = () => {
             <div class="navbar-content">
               <ul class="navbar-list">
                 <li class="navbar-item dropdown">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     home
-                  </a>
+                  </Link>
                   <ul class="dropdown-position-list">
                     <li>
-                      <a href="home-grid.html">Home grid</a>
+                      <Link to="/" >Home</Link>
                     </li>
                     <li>
-                      <a href="index.html">Home index</a>
+                      <Link to="/shop" >Shop</Link>
                     </li>
                     <li>
-                      <a href="home-classic.html">Home classic</a>
+                      <Link to="/profile" >Profile</Link>
                     </li>
                     <li>
-                      <a href="home-standard.html">Home standard</a>
+                      <Link to="/checkout" >Checkout</Link>
                     </li>
                     <li>
-                      <a href="home-category.html">Home category</a>
+                      <Link to="/product_detail" >Product Detail</Link>
+                    </li>
+                    <li>
+                      <Link to="/login" >Login</Link>
+                    </li>
+                    <li>
+                      <Link to="/register" >Signup</Link>
+                    </li>
+                    <li>
+                      <Link to="/forgot_password" >Product Detail</Link>
                     </li>
                   </ul>
                 </li>
                 <li class="navbar-item dropdown-megamenu">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     shop
-                  </a>
+                  </Link>
                   <div class="megamenu">
                     <div class="container">
                       <div class="row">
@@ -42,19 +52,19 @@ const nav = () => {
                             <h5 class="megamenu-title">shop pages</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="shop-5column.html">shop 5 column</a>
+                                <Link to="" >shop 5 column</Link>
                               </li>
                               <li>
-                                <a href="shop-4column.html">shop 4 column</a>
+                                <Link to="" >shop 4 column</Link>
                               </li>
                               <li>
-                                <a href="shop-3column.html">shop 3 column</a>
+                                <Link to="" >shop 3 column</Link>
                               </li>
                               <li>
-                                <a href="shop-2column.html">shop 2 column</a>
+                                <Link to="" >shop 2 column</Link>
                               </li>
                               <li>
-                                <a href="shop-1column.html">shop 1 column</a>
+                                <Link to="" >shop 1 column</Link>
                               </li>
                             </ul>
                           </div>
@@ -64,24 +74,24 @@ const nav = () => {
                             <h5 class="megamenu-title">product pages</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="product-tab.html">
+                                <Link to="" >
                                   product single tab
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="product-grid.html">
+                                <Link to="" >
                                   product single grid
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="product-video.html">
+                                <Link to="" >
                                   product single video
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="product-simple.html">
+                                <Link to="" >
                                   product single simple
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -91,19 +101,19 @@ const nav = () => {
                             <h5 class="megamenu-title">user action</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="wishlist.html">wishlist</a>
+                                <Link to="" >wishlist</Link>
                               </li>
                               <li>
-                                <a href="compare.html">compare</a>
+                                <Link to="" >compare</Link>
                               </li>
                               <li>
-                                <a href="checkout.html">checkout</a>
+                                <Link to="" >checkout</Link>
                               </li>
                               <li>
-                                <a href="orderlist.html">order history</a>
+                                <Link to="" >order history</Link>
                               </li>
                               <li>
-                                <a href="invoice.html">order invoice</a>
+                                <Link to="" >order invoice</Link>
                               </li>
                             </ul>
                           </div>
@@ -113,13 +123,13 @@ const nav = () => {
                             <h5 class="megamenu-title">other pages</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="all-category.html">all Category</a>
+                                <Link to="" >all Category</Link>
                               </li>
                               <li>
-                                <a href="brand-list.html">brand list</a>
+                                <Link to="" >brand list</Link>
                               </li>
                               <li>
-                                <a href="brand-single.html">brand single</a>
+                                <Link to="" >brand single</Link>
                               </li>
                             </ul>
                           </div>
@@ -129,9 +139,9 @@ const nav = () => {
                   </div>
                 </li>
                 <li class="navbar-item dropdown-megamenu">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     category
-                  </a>
+                  </Link>
                   <div class="megamenu">
                     <div class="container">
                       <div class="row row-cols-5">
@@ -140,19 +150,19 @@ const nav = () => {
                             <h5 class="megamenu-title">vegetables</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">carrot</a>
+                                <Link to="" >carrot</Link>
                               </li>
                               <li>
-                                <a href="#">broccoli</a>
+                                <Link to="" >broccoli</Link>
                               </li>
                               <li>
-                                <a href="#">asparagus</a>
+                                <Link to="" >asparagus</Link>
                               </li>
                               <li>
-                                <a href="#">cauliflower</a>
+                                <Link to="" >cauliflower</Link>
                               </li>
                               <li>
-                                <a href="#">eggplant</a>
+                                <Link to="" >eggplant</Link>
                               </li>
                             </ul>
                           </div>
@@ -162,19 +172,19 @@ const nav = () => {
                             <h5 class="megamenu-title">fruits</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">Apple</a>
+                                <Link to="" >Apple</Link>
                               </li>
                               <li>
-                                <a href="#">orange</a>
+                                <Link to="" >orange</Link>
                               </li>
                               <li>
-                                <a href="#">banana</a>
+                                <Link to="" >banana</Link>
                               </li>
                               <li>
-                                <a href="#">strawberrie</a>
+                                <Link to="" >strawberrie</Link>
                               </li>
                               <li>
-                                <a href="#">watermelon</a>
+                                <Link to="" >watermelon</Link>
                               </li>
                             </ul>
                           </div>
@@ -184,19 +194,19 @@ const nav = () => {
                             <h5 class="megamenu-title">dairy farms</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">Butter</a>
+                                <Link to="" >Butter</Link>
                               </li>
                               <li>
-                                <a href="#">Cheese</a>
+                                <Link to="" >Cheese</Link>
                               </li>
                               <li>
-                                <a href="#">Milk</a>
+                                <Link to="" >Milk</Link>
                               </li>
                               <li>
-                                <a href="#">Eggs</a>
+                                <Link to="" >Eggs</Link>
                               </li>
                               <li>
-                                <a href="#">cream</a>
+                                <Link to="" >cream</Link>
                               </li>
                             </ul>
                           </div>
@@ -206,19 +216,19 @@ const nav = () => {
                             <h5 class="megamenu-title">seafoods</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">Lobster</a>
+                                <Link to="" >Lobster</Link>
                               </li>
                               <li>
-                                <a href="#">Octopus</a>
+                                <Link to="" >Octopus</Link>
                               </li>
                               <li>
-                                <a href="#">Shrimp</a>
+                                <Link to="" >Shrimp</Link>
                               </li>
                               <li>
-                                <a href="#">Halabos</a>
+                                <Link to="" >Halabos</Link>
                               </li>
                               <li>
-                                <a href="#">Maeuntang</a>
+                                <Link to="" >Maeuntang</Link>
                               </li>
                             </ul>
                           </div>
@@ -228,19 +238,19 @@ const nav = () => {
                             <h5 class="megamenu-title">diet foods</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">Salmon</a>
+                                <Link to="" >Salmon</Link>
                               </li>
                               <li>
-                                <a href="#">Avocados</a>
+                                <Link to="" >Avocados</Link>
                               </li>
                               <li>
-                                <a href="#">Leafy Greens</a>
+                                <Link to="" >Leafy Greens</Link>
                               </li>
                               <li>
-                                <a href="#">Boiled Potatoes</a>
+                                <Link to="" >Boiled Potatoes</Link>
                               </li>
                               <li>
-                                <a href="#">Cottage Cheese</a>
+                                <Link to="" >Cottage Cheese</Link>
                               </li>
                             </ul>
                           </div>
@@ -250,19 +260,19 @@ const nav = () => {
                             <h5 class="megamenu-title">fast foods</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">burger</a>
+                                <Link to="" >burger</Link>
                               </li>
                               <li>
-                                <a href="#">milkshake</a>
+                                <Link to="" >milkshake</Link>
                               </li>
                               <li>
-                                <a href="#">sandwich</a>
+                                <Link to="" >sandwich</Link>
                               </li>
                               <li>
-                                <a href="#">doughnut</a>
+                                <Link to="" >doughnut</Link>
                               </li>
                               <li>
-                                <a href="#">pizza</a>
+                                <Link to="" >pizza</Link>
                               </li>
                             </ul>
                           </div>
@@ -272,19 +282,19 @@ const nav = () => {
                             <h5 class="megamenu-title">drinks</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">cocktail</a>
+                                <Link to="" >cocktail</Link>
                               </li>
                               <li>
-                                <a href="#">hard soda</a>
+                                <Link to="" >hard soda</Link>
                               </li>
                               <li>
-                                <a href="#">shampain</a>
+                                <Link to="" >shampain</Link>
                               </li>
                               <li>
-                                <a href="#">Wine</a>
+                                <Link to="" >Wine</Link>
                               </li>
                               <li>
-                                <a href="#">barley</a>
+                                <Link to="" >barley</Link>
                               </li>
                             </ul>
                           </div>
@@ -294,19 +304,19 @@ const nav = () => {
                             <h5 class="megamenu-title">meats</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">Meatball</a>
+                                <Link to="" >Meatball</Link>
                               </li>
                               <li>
-                                <a href="#">Sausage</a>
+                                <Link to="" >Sausage</Link>
                               </li>
                               <li>
-                                <a href="#">Poultry</a>
+                                <Link to="" >Poultry</Link>
                               </li>
                               <li>
-                                <a href="#">chicken</a>
+                                <Link to="" >chicken</Link>
                               </li>
                               <li>
-                                <a href="#">Cows</a>
+                                <Link to="" >Cows</Link>
                               </li>
                             </ul>
                           </div>
@@ -316,19 +326,19 @@ const nav = () => {
                             <h5 class="megamenu-title">fishes</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">scads</a>
+                                <Link to="" >scads</Link>
                               </li>
                               <li>
-                                <a href="#">pomfret</a>
+                                <Link to="" >pomfret</Link>
                               </li>
                               <li>
-                                <a href="#">groupers</a>
+                                <Link to="" >groupers</Link>
                               </li>
                               <li>
-                                <a href="#">anchovy</a>
+                                <Link to="" >anchovy</Link>
                               </li>
                               <li>
-                                <a href="#">mackerel</a>
+                                <Link to="" >mackerel</Link>
                               </li>
                             </ul>
                           </div>
@@ -338,19 +348,19 @@ const nav = () => {
                             <h5 class="megamenu-title">dry foods</h5>
                             <ul class="megamenu-list">
                               <li>
-                                <a href="#">noodles</a>
+                                <Link to="" >noodles</Link>
                               </li>
                               <li>
-                                <a href="#">Powdered milk</a>
+                                <Link to="" >Powdered milk</Link>
                               </li>
                               <li>
-                                <a href="#">nut &amp; yeast</a>
+                                <Link to="" >nut &amp; yeast</Link>
                               </li>
                               <li>
-                                <a href="#">almonds</a>
+                                <Link to="" >almonds</Link>
                               </li>
                               <li>
-                                <a href="#">pumpkin</a>
+                                <Link to="" >pumpkin</Link>
                               </li>
                             </ul>
                           </div>
@@ -360,80 +370,80 @@ const nav = () => {
                   </div>
                 </li>
                 <li class="navbar-item dropdown">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     pages
-                  </a>
+                  </Link>
                   <ul class="dropdown-position-list">
                     <li>
-                      <a href="faq.html">faqs</a>
+                      <Link to="" >faqs</Link>
                     </li>
                     <li>
-                      <a href="offer.html">offers</a>
+                      <Link to="" >offers</Link>
                     </li>
                     <li>
-                      <a href="profile.html">my profile</a>
+                      <Link to="" >my profile</Link>
                     </li>
                     <li>
-                      <a href="wallet.html">my wallet</a>
+                      <Link to="" >my wallet</Link>
                     </li>
                     <li>
-                      <a href="about.html">about us</a>
+                      <Link to="" >about us</Link>
                     </li>
                     <li>
-                      <a href="contact.html">contact us</a>
+                      <Link to="" >contact us</Link>
                     </li>
                     <li>
-                      <a href="privacy.html">privacy policy</a>
+                      <Link to="" >privacy policy</Link>
                     </li>
                     <li>
-                      <a href="coming-soon.html">coming soon</a>
+                      <Link to="" >coming soon</Link>
                     </li>
                     <li>
-                      <a href="blank-page.html">blank page</a>
+                      <Link to="" >blank page</Link>
                     </li>
                     <li>
-                      <a href="error.html">404 Error</a>
+                      <Link to="" >404 Error</Link>
                     </li>
                     <li>
-                      <a href="email-template.html">email template</a>
+                      <Link to="" >email template</Link>
                     </li>
                   </ul>
                 </li>
                 <li class="navbar-item dropdown">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     authentic
-                  </a>
+                  </Link>
                   <ul class="dropdown-position-list">
                     <li>
-                      <a href="login.html">login</a>
+                      <Link to="" >login</Link>
                     </li>
                     <li>
-                      <a href="register.html">register</a>
+                      <Link to="" >register</Link>
                     </li>
                     <li>
-                      <a href="reset-password.html">reset password</a>
+                      <Link to="" >reset password</Link>
                     </li>
                     <li>
-                      <a href="change-password.html">change password</a>
+                      <Link to="" >change password</Link>
                     </li>
                   </ul>
                 </li>
                 <li class="navbar-item dropdown">
-                  <a class="navbar-link dropdown-arrow" href="#">
+                  <Link class="navbar-link dropdown-arrow" to="" >
                     blogs
-                  </a>
+                  </Link>
                   <ul class="dropdown-position-list">
                     <li>
-                      <a href="blog-grid.html">blog grid</a>
+                      <Link to="" >blog grid</Link>
                     </li>
                     <li>
-                      <a href="blog-standard.html">blog standard</a>
+                      <Link to="" >blog standard</Link>
                     </li>
                     <li>
-                      <a href="blog-details.html">blog details</a>
+                      <Link to="" >blog details</Link>
                     </li>
                     <li>
-                      <a href="blog-author.html">blog author</a>
+                      <Link to="" >blog author</Link>
                     </li>
                   </ul>
                 </li>

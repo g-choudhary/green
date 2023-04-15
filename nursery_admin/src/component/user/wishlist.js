@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import product from "../css-js/images/product/01.jpg";
 
 const wishlist = () => {
@@ -12,10 +13,10 @@ const wishlist = () => {
           <h2>wishlist</h2>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="" >Home</Link>
             </li>
             <li className="breadcrumb-item">
-              <a href="shop-4column.html">shop grid</a>
+              <Link to="" >shop grid</Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               wishlist
@@ -60,7 +61,7 @@ const wishlist = () => {
                       <td className="table-desc">
                         <p>
                           Lorem ipsum nobis eaque excepturi nisi eveniet...
-                          <a href="product-video.html">read more</a>
+                          <Link to="" >read more</Link>
                         </p>
                       </td>
                       <td className="table-status">
@@ -90,18 +91,18 @@ const wishlist = () => {
                         </div>
                       </td>
                       <td className="table-action">
-                        <a
+                        <Link 
                           className="view"
-                          href="#"
+                          to="" 
                           title="Quick View"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
                         >
                           <i className="fas fa-eye"></i>
-                        </a>
-                        <a className="trash" href="#" title="Remove Wishlist">
+                        </Link>
+                        <Link className="trash" to="" >
                           <i className="icofont-trash"></i>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr>
@@ -122,7 +123,7 @@ const wishlist = () => {
                       <td className="table-desc">
                         <p>
                           Lorem ipsum nobis eaque excepturi nisi eveniet...
-                          <a href="product-video.html">read more</a>
+                          <Link to="" >read more</Link>
                         </p>
                       </td>
                       <td className="table-status">
@@ -152,18 +153,18 @@ const wishlist = () => {
                         </div>
                       </td>
                       <td className="table-action">
-                        <a
+                        <Link 
                           className="view"
-                          href="#"
+                          to="" 
                           title="Quick View"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
                         >
                           <i className="fas fa-eye"></i>
-                        </a>
-                        <a className="trash" href="#" title="Remove Wishlist">
+                        </Link>
+                        <Link className="trash" to="" >
                           <i className="icofont-trash"></i>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr>
@@ -184,7 +185,7 @@ const wishlist = () => {
                       <td className="table-desc">
                         <p>
                           Lorem ipsum nobis eaque excepturi nisi eveniet...
-                          <a href="product-video.html">read more</a>
+                          <Link to="" >read more</Link>
                         </p>
                       </td>
                       <td className="table-status">
@@ -214,18 +215,18 @@ const wishlist = () => {
                         </div>
                       </td>
                       <td className="table-action">
-                        <a
+                        <Link 
                           className="view"
-                          href="#"
+                          to="" 
                           title="Quick View"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
                         >
                           <i className="fas fa-eye"></i>
-                        </a>
-                        <a className="trash" href="#" title="Remove Wishlist">
+                        </Link>
+                        <Link className="trash" to="" >
                           <i className="icofont-trash"></i>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr>
@@ -246,7 +247,7 @@ const wishlist = () => {
                       <td className="table-desc">
                         <p>
                           Lorem ipsum nobis eaque excepturi nisi eveniet...
-                          <a href="product-video.html">read more</a>
+                          <Link to="" >read more</Link>
                         </p>
                       </td>
                       <td className="table-status">
@@ -276,18 +277,18 @@ const wishlist = () => {
                         </div>
                       </td>
                       <td className="table-action">
-                        <a
+                        <Link 
                           className="view"
-                          href="#"
+                          to="" 
                           title="Quick View"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
                         >
                           <i className="fas fa-eye"></i>
-                        </a>
-                        <a className="trash" href="#" title="Remove Wishlist">
+                        </Link>
+                        <Link className="trash" to="" >
                           <i className="icofont-trash"></i>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr>
@@ -308,7 +309,7 @@ const wishlist = () => {
                       <td className="table-desc">
                         <p>
                           Lorem ipsum nobis eaque excepturi nisi eveniet...
-                          <a href="product-video.html">read more</a>
+                          <Link to="" >read more</Link>
                         </p>
                       </td>
                       <td className="table-status">
@@ -338,18 +339,18 @@ const wishlist = () => {
                         </div>
                       </td>
                       <td className="table-action">
-                        <a
+                        <Link 
                           className="view"
-                          href="#"
+                          to="" 
                           title="Quick View"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
                         >
                           <i className="fas fa-eye"></i>
-                        </a>
-                        <a className="trash" href="#" title="Remove Wishlist">
+                        </Link>
+                        <Link className="trash" to="" >
                           <i className="icofont-trash"></i>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                   </tbody>

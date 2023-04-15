@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import img1 from "../css-js/images/home/index/01.png";
 import img2 from "../css-js/images/home/index/02.png";
 import product from "../css-js/images/product/01.jpg";
@@ -20,14 +21,14 @@ const index = () => {
                     excepturi
                   </p>
                   <div className="banner-btn">
-                    <a className="btn btn-inline" href="shop-4column.html">
+                    <Link className="btn btn-inline" to="" >
                       <i className="fas fa-shopping-basket"></i>
                       <span>shop now</span>
-                    </a>
-                    <a className="btn btn-outline" href="offer.html">
+                    </Link>
+                    <Link className="btn btn-outline" to="" >
                       <i className="icofont-sale-discount"></i>
                       <span>get offer</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -57,14 +58,14 @@ const index = () => {
                     excepturi
                   </p>
                   <div className="banner-btn">
-                    <a className="btn btn-inline" href="shop-4column.html">
+                    <Link className="btn btn-inline" to="" >
                       <i className="fas fa-shopping-basket"></i>
                       <span>shop now</span>
-                    </a>
-                    <a className="btn btn-outline" href="offer.html">
+                    </Link>
+                    <Link className="btn btn-outline" to="" >
                       <i className="icofont-sale-discount"></i>
                       <span>get offer</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -76,68 +77,68 @@ const index = () => {
         <div className="container">
           <ul className="suggest-slider slider-arrow">
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/01.jpg" alt="suggest" />
                 <h5>
                   vegetables <span>34 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/02.jpg" alt="suggest" />
                 <h5>
                   fruits <span>89 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/03.jpg" alt="suggest" />
                 <h5>
                   groceries <span>45 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/04.jpg" alt="suggest" />
                 <h5>
                   dairy farm <span>83 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/05.jpg" alt="suggest" />
                 <h5>
                   sea foods <span>40 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/06.jpg" alt="suggest" />
                 <h5>
                   vegan foods <span>57 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/07.jpg" alt="suggest" />
                 <h5>
                   dry foods <span>23 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="suggest-card" href="shop-4column.html">
+              <Link className="suggest-card" to="" >
                 <img src="images/suggest/08.jpg" alt="suggest" />
                 <h5>
                   fast foods <span>97 items</span>
                 </h5>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -161,29 +162,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -193,10 +194,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -236,29 +237,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -268,10 +269,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -310,29 +311,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -342,10 +343,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -384,29 +385,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -416,10 +417,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -458,29 +459,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -490,10 +491,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -532,29 +533,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -564,10 +565,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -606,29 +607,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -638,10 +639,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -680,29 +681,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -712,10 +713,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -754,29 +755,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -786,10 +787,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -828,29 +829,29 @@ const index = () => {
                   <button className="product-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="product-image" href="product-video.html">
+                  <Link className="product-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="product-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="product-content">
@@ -860,10 +861,10 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3)</a>
+                    <Link to="" >(3)</Link>
                   </div>
                   <h6 className="product-name">
-                    <a href="product-video.html">fresh green chilis</a>
+                    <Link to="" >fresh green chilis</Link>
                   </h6>
                   <h6 className="product-price">
                     <del>$34</del>
@@ -897,10 +898,10 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-25">
-                <a href="shop-4column.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>show more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -911,9 +912,9 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="promo-img">
-                <a href="#">
+                <Link to="" >
                   <img src="images/promo/home/03.jpg" alt="promo" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -938,34 +939,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -973,7 +974,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1016,34 +1017,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -1051,7 +1052,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1094,34 +1095,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -1129,7 +1130,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1172,34 +1173,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -1207,7 +1208,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1250,34 +1251,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -1285,7 +1286,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1328,34 +1329,34 @@ const index = () => {
                   <button className="feature-wish wish">
                     <i className="fas fa-heart"></i>
                   </button>
-                  <a className="feature-image" href="product-video.html">
+                  <Link className="feature-image" to="" >
                     <img src={product} alrt="" alt="product" />
-                  </a>
+                  </Link>
                   <div className="feature-widget">
-                    <a
+                    <Link 
                       title="Product Compare"
-                      href="compare.html"
+                      to="" 
                       className="fas fa-random"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product Video"
-                      href="https://youtu.be/9xzcVxSBbG8"
+                      to="" 
                       className="venobox fas fa-play"
                       data-autoplay="true"
                       data-vbtype="video"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link 
                       title="Product View"
-                      href="#"
+                      to="" 
                       className="fas fa-eye"
                       data-bs-toggle="modal"
                       data-bs-target="#product-view"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
                 <div className="feature-content">
                   <h6 className="feature-name">
-                    <a href="product-video.html">fresh organic green chilis</a>
+                    <Link to="" >fresh organic green chilis</Link>
                   </h6>
                   <div className="feature-rating">
                     <i className="active icofont-star"></i>
@@ -1363,7 +1364,7 @@ const index = () => {
                     <i className="active icofont-star"></i>
                     <i className="active icofont-star"></i>
                     <i className="icofont-star"></i>
-                    <a href="product-video.html">(3 Reviews)</a>
+                    <Link to="" >(3 Reviews)</Link>
                   </div>
                   <h6 className="feature-price">
                     <del>$34</del>
@@ -1401,10 +1402,10 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-25">
-                <a href="shop-4column.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>show more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1442,10 +1443,10 @@ const index = () => {
                     <small>seconds</small>
                   </span>
                 </div>
-                <a href="shop-4column.html" className="btn btn-inline">
+                <Link to="" >
                   <i className="fas fa-shopping-basket"></i>
                   <span>shop now</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-1"></div>
@@ -1482,29 +1483,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1514,10 +1515,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1556,29 +1557,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1588,10 +1589,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1630,29 +1631,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1662,10 +1663,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1704,29 +1705,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1736,10 +1737,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1778,29 +1779,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1810,10 +1811,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1852,29 +1853,29 @@ const index = () => {
                       <button className="product-wish wish">
                         <i className="fas fa-heart"></i>
                       </button>
-                      <a className="product-image" href="product-video.html">
+                      <Link className="product-image" to="" >
                         <img src={product} alrt="" alt="product" />
-                      </a>
+                      </Link>
                       <div className="product-widget">
-                        <a
+                        <Link 
                           title="Product Compare"
-                          href="compare.html"
+                          to="" 
                           className="fas fa-random"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product Video"
-                          href="https://youtu.be/9xzcVxSBbG8"
+                          to="" 
                           className="venobox fas fa-play"
                           data-autoplay="true"
                           data-vbtype="video"
-                        ></a>
-                        <a
+                        ></Link>
+                        <Link 
                           title="Product View"
-                          href="#"
+                          to="" 
                           className="fas fa-eye"
                           data-bs-toggle="modal"
                           data-bs-target="#product-view"
-                        ></a>
+                        ></Link>
                       </div>
                     </div>
                     <div className="product-content">
@@ -1884,10 +1885,10 @@ const index = () => {
                         <i className="active icofont-star"></i>
                         <i className="active icofont-star"></i>
                         <i className="icofont-star"></i>
-                        <a href="product-video.html">(3)</a>
+                        <Link to="" >(3)</Link>
                       </div>
                       <h6 className="product-name">
-                        <a href="product-video.html">fresh green chilis</a>
+                        <Link to="" >fresh green chilis</Link>
                       </h6>
                       <h6 className="product-price">
                         <del>$34</del>
@@ -1923,10 +1924,10 @@ const index = () => {
           <div className="row">
             <div className="col">
               <div className="section-btn-25">
-                <a href="shop-4column.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>show more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1937,16 +1938,16 @@ const index = () => {
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 px-xl-3">
               <div className="promo-img">
-                <a href="#">
+                <Link to="" >
                   <img src="images/promo/home/01.jpg" alt="promo" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 px-xl-3">
               <div className="promo-img">
-                <a href="#">
+                <Link to="" >
                   <img src="images/promo/home/02.jpg" alt="promo" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1965,26 +1966,26 @@ const index = () => {
             <div className="col-lg-12">
               <ul className="nav nav-tabs">
                 <li>
-                  <a
-                    href="#top-order"
+                  <Link 
+                    to="" 
                     className="tab-link active"
                     data-bs-toggle="tab"
                   >
                     <i className="icofont-price"></i>
                     <span>top order</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#top-rate" className="tab-link" data-bs-toggle="tab">
+                  <Link to="" >
                     <i className="icofont-star"></i>
                     <span>top rating</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#top-disc" className="tab-link" data-bs-toggle="tab">
+                  <Link to="" >
                     <i className="icofont-sale-discount"></i>
                     <span>top discount</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -2000,29 +2001,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2032,10 +2033,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2074,29 +2075,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2106,10 +2107,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2148,29 +2149,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2180,10 +2181,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2222,29 +2223,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2254,10 +2255,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2296,29 +2297,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2328,10 +2329,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2370,29 +2371,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2402,10 +2403,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2444,29 +2445,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2476,10 +2477,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2518,29 +2519,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2550,10 +2551,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2592,29 +2593,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2624,10 +2625,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2666,29 +2667,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2698,10 +2699,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2744,29 +2745,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2776,10 +2777,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2818,29 +2819,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2850,10 +2851,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2892,29 +2893,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2924,10 +2925,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -2966,29 +2967,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -2998,10 +2999,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3040,29 +3041,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3072,10 +3073,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3114,29 +3115,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3146,10 +3147,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3188,29 +3189,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3220,10 +3221,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3262,29 +3263,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3294,10 +3295,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3336,29 +3337,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3368,10 +3369,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3410,29 +3411,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3442,10 +3443,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3488,29 +3489,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3520,10 +3521,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3562,29 +3563,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3594,10 +3595,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3636,29 +3637,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3668,10 +3669,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3710,29 +3711,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3742,10 +3743,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3784,29 +3785,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3816,10 +3817,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3858,29 +3859,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3890,10 +3891,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -3932,29 +3933,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -3964,10 +3965,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -4006,29 +4007,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -4038,10 +4039,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -4080,29 +4081,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -4112,10 +4113,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -4154,29 +4155,29 @@ const index = () => {
                     <button className="product-wish wish">
                       <i className="fas fa-heart"></i>
                     </button>
-                    <a className="product-image" href="product-video.html">
+                    <Link className="product-image" to="" >
                       <img src={product} alrt="" alt="product" />
-                    </a>
+                    </Link>
                     <div className="product-widget">
-                      <a
+                      <Link 
                         title="Product Compare"
-                        href="compare.html"
+                        to="" 
                         className="fas fa-random"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product Video"
-                        href="https://youtu.be/9xzcVxSBbG8"
+                        to="" 
                         className="venobox fas fa-play"
                         data-autoplay="true"
                         data-vbtype="video"
-                      ></a>
-                      <a
+                      ></Link>
+                      <Link 
                         title="Product View"
-                        href="#"
+                        to="" 
                         className="fas fa-eye"
                         data-bs-toggle="modal"
                         data-bs-target="#product-view"
-                      ></a>
+                      ></Link>
                     </div>
                   </div>
                   <div className="product-content">
@@ -4186,10 +4187,10 @@ const index = () => {
                       <i className="active icofont-star"></i>
                       <i className="active icofont-star"></i>
                       <i className="icofont-star"></i>
-                      <a href="product-video.html">(3)</a>
+                      <Link to="" >(3)</Link>
                     </div>
                     <h6 className="product-name">
-                      <a href="product-video.html">fresh green chilis</a>
+                      <Link to="" >fresh green chilis</Link>
                     </h6>
                     <h6 className="product-price">
                       <del>$34</del>
@@ -4224,10 +4225,10 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-25">
-                <a href="shop-4column.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>show more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -4247,9 +4248,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/01.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4261,9 +4262,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/02.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4275,9 +4276,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/03.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4289,9 +4290,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/04.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4303,9 +4304,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/05.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4317,9 +4318,9 @@ const index = () => {
               <div className="brand-media">
                 <img src="images/brand/06.jpg" alt="brand" />
                 <div className="brand-overlay">
-                  <a href="brand-single.html">
+                  <Link to="" >
                     <i className="fas fa-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="brand-meta">
@@ -4331,10 +4332,10 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-50">
-                <a href="brand-list.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>view all brands</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -4439,9 +4440,9 @@ const index = () => {
               <div className="blog-slider slider-arrow">
                 <div className="blog-card">
                   <div className="blog-media">
-                    <a className="blog-img" href="#">
+                    <Link className="blog-img" to="" >
                       <img src={blog} alt="blog" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="blog-content">
                     <ul className="blog-meta">
@@ -4455,26 +4456,26 @@ const index = () => {
                       </li>
                     </ul>
                     <h4 className="blog-title">
-                      <a href="blog-details.html">
+                      <Link to="" >
                         Voluptate blanditiis provident Lorem ipsum dolor sit
                         amet
-                      </a>
+                      </Link>
                     </h4>
                     <p className="blog-desc">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Alias autem recusandae deleniti nam dignissimos sequi ...
                     </p>
-                    <a className="blog-btn" href="#">
+                    <Link className="blog-btn" to="" >
                       <span>read more</span>
                       <i className="icofont-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="blog-card">
                   <div className="blog-media">
-                    <a className="blog-img" href="#">
+                    <Link className="blog-img" to="" >
                       <img src={blog} alt="blog" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="blog-content">
                     <ul className="blog-meta">
@@ -4488,26 +4489,26 @@ const index = () => {
                       </li>
                     </ul>
                     <h4 className="blog-title">
-                      <a href="blog-details.html">
+                      <Link to="" >
                         Voluptate blanditiis provident Lorem ipsum dolor sit
                         amet
-                      </a>
+                      </Link>
                     </h4>
                     <p className="blog-desc">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Alias autem recusandae deleniti nam dignissimos sequi ...
                     </p>
-                    <a className="blog-btn" href="#">
+                    <Link className="blog-btn" to="" >
                       <span>read more</span>
                       <i className="icofont-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="blog-card">
                   <div className="blog-media">
-                    <a className="blog-img" href="#">
+                    <Link className="blog-img" to="" >
                       <img src={blog} alt="blog" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="blog-content">
                     <ul className="blog-meta">
@@ -4521,26 +4522,26 @@ const index = () => {
                       </li>
                     </ul>
                     <h4 className="blog-title">
-                      <a href="blog-details.html">
+                      <Link to="" >
                         Voluptate blanditiis provident Lorem ipsum dolor sit
                         amet
-                      </a>
+                      </Link>
                     </h4>
                     <p className="blog-desc">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Alias autem recusandae deleniti nam dignissimos sequi ...
                     </p>
-                    <a className="blog-btn" href="#">
+                    <Link className="blog-btn" to="" >
                       <span>read more</span>
                       <i className="icofont-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="blog-card">
                   <div className="blog-media">
-                    <a className="blog-img" href="#">
+                    <Link className="blog-img" to="" >
                       <img src={blog} alt="blog" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="blog-content">
                     <ul className="blog-meta">
@@ -4554,19 +4555,19 @@ const index = () => {
                       </li>
                     </ul>
                     <h4 className="blog-title">
-                      <a href="blog-details.html">
+                      <Link to="" >
                         Voluptate blanditiis provident Lorem ipsum dolor sit
                         amet
-                      </a>
+                      </Link>
                     </h4>
                     <p className="blog-desc">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Alias autem recusandae deleniti nam dignissimos sequi ...
                     </p>
-                    <a className="blog-btn" href="#">
+                    <Link className="blog-btn" to="" >
                       <span>read more</span>
                       <i className="icofont-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -4575,10 +4576,10 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-btn-25">
-                <a href="blog-grid.html" className="btn btn-outline">
+                <Link to="" >
                   <i className="fas fa-eye"></i>
                   <span>view all blog</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../css-js/images/logo.png";
 import Profile from "../css-js/images/user.png";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -13,20 +14,20 @@ const header = () => {
               <button className="header-user">
                 <img src={Profile} alt="user" />
               </button>
-              <a href="index.html">
+              <Link to="" >
                 <img src={Logo} alt="logo" />
-              </a>
+              </Link>
               <button className="header-src">
                 <i className="fas fa-search"></i>
               </button>
             </div>
-            <a href="index.html" className="header-logo">
+            <Link to="" >
               <img src={Logo} alt="logo" />
-            </a>
-            <a href="login.html" className="header-widget" title="My Account">
+            </Link>
+            <Link to="" >
               <img src={Profile} alt="user" />
               <span>join</span>
-            </a>
+            </Link>
             <form className="header-form">
               <input type="text" placeholder="Search anything..." />
               <button>
@@ -34,22 +35,22 @@ const header = () => {
               </button>
             </form>
             <div className="header-widget-group">
-              <a
-                href="compare.html"
+              <Link 
+                to="" 
                 className="header-widget"
                 title="Compare List"
               >
                 <i className="fas fa-random"></i>
                 <sup>0</sup>
-              </a>
-              <a
-                href="wishlist.html"
+              </Link>
+              <Link 
+                to="" 
                 className="header-widget"
                 title="Wishlist"
               >
                 <i className="fas fa-heart"></i>
                 <sup>0</sup>
-              </a>
+              </Link>
               <button className="header-widget header-cart" title="Cartlist">
                 <i className="fas fa-shopping-basket"></i>
                 <sup>9+</sup>
@@ -62,10 +63,10 @@ const header = () => {
         </div>
       </header>
       <div className="mobile-menu">
-        <a href="index.html" title="Home Page">
+        <Link to="" >
           <i className="fas fa-home"></i>
           <span>Home</span>
-        </a>
+        </Link>
         <button className="cate-btn" title="Category List">
           <i className="fas fa-list"></i>
           <span>category</span>
@@ -75,16 +76,16 @@ const header = () => {
           <span>cartlist</span>
           <sup>9+</sup>
         </button>
-        <a href="wishlist.html" title="Wishlist">
+        <Link to="" >
           <i className="fas fa-heart"></i>
           <span>wishlist</span>
           <sup>0</sup>
-        </a>
-        <a href="compare.html" title="Compare List">
+        </Link>
+        <Link to="" >
           <i className="fas fa-random"></i>
           <span>compare</span>
           <sup>0</sup>
-        </a>
+        </Link>
       </div>
     </Fragment>
   );
